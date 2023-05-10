@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Mind Reader</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="script.js">
 </head>
 <body>
   <h1>Mind Reader</h1>
@@ -19,25 +20,6 @@
 
   <div id="result"></div>
 
-  <script>
-    document.getElementById('numberForm').addEventListener('submit', function(event) {
-      event.preventDefault(); 
 
-      var number = document.getElementById('numberInput').value;
-
-     
-      document.getElementById('processing').style.display = 'block';
-
-     
-      setTimeout(function() {
-        
-        document.getElementById('result').innerText = 'You are thinking of the number ' + number;
-        document.getElementById('result').style.display = 'block';
-
-        
-        document.getElementById('processing').style.display = 'none';
-      }, 3000);
-    });
-  </script>
 </body>
 </html>
