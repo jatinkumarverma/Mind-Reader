@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mind Reader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Mind Reader</h1>
+  <form id="numberForm">
+    <label for="numberInput">Think a number between 1 and 100:</label>
+    <input type="number" id="numberInput" min="1" max="100" required>
+    <button  type="submit"  id="submitButton">Read my mind</button>
+  </form>
+
+  <div id="processing" class="centered-text">
+    <p>Decoding thoughts...</p>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('numberForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      var number = document.getElementById('numberInput').value;
+
+     
+      document.getElementById('processing').style.display = 'block';
+
+     
+      setTimeout(function() {
+        
+        document.getElementById('result').innerText = 'You are thinking of the number ' + number;
+        document.getElementById('result').style.display = 'block';
+
+        
+        document.getElementById('processing').style.display = 'none';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 25px;
+  }
+
+  #numberForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+
+  #result {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  #processing {
+    display: none;
+    margin-top: 10px;
+    line-height: 2;
+  }
+
+  .centered-text {
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+  }
+
+  .button {
+    border-radius: 8px;
+  }
+
+  #numberInput {
+    width: 200px; /* Adjust the desired width */
+    height: 40px; /* Adjust the desired height */
+    font-size: 16px; /* Adjust the desired font size */
+    margin-bottom: 10px;
+  }
+
+  #submitButton {
+    width: 150px; /* Adjust the desired width */
+    height: 40px; /* Adjust the desired height */
+    font-size: 16px; /* Adjust the desired font size */
+  }
+  
